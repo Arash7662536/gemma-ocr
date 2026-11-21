@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma-ocr"
+version = "1.0.0"
+description = "Persian document OCR with a local Gemma-4 model (vLLM): multi-pass reading, verification, HTML report"
+requires-python = ">=3.11"
+dependencies = ["pymupdf>=1.24", "pillow>=10", "requests>=2.31", "markdown>=3.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+gemma-ocr = "gemma_ocr.cli:main"
+
+[tool.setuptools]
+packages = ["gemma_ocr"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

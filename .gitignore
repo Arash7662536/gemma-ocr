@@ -1,0 +1,18 @@
+# secrets
+.env
+# data and outputs (documents are sensitive: never commit them)
+input/
+out/
+out*/
+cache/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/

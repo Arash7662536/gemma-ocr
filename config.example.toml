@@ -1,0 +1,16 @@
+# Any Config field (gemma_ocr/config.py) can be set here; values shown are the defaults.
+soft_tokens = 1120          # vision tokens per image (Gemma-4 max)
+dpi = 300
+strip_overlap = 0.18
+max_strips = 6
+min_strips = 2              # every page: overview + >=2 strips (0 = strips only when the page does not fit one image)
+upscale_below_width = 1700
+upscale_width = 2600
+workers = 16
+orientation = true
+proofread = true
+cross_read = true
+snap_to_text_layer = true
+fields = true
+cache_dir = "cache"
+report_title = "OCR results"
